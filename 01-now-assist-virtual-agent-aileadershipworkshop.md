@@ -165,10 +165,13 @@ Once the Virtual Agent Assistant has been setup, we will move ahead to duplicate
 
 The **Upload image** topic is an out-of-the-box (OOB) topic provided by the Platform AI Agents and Skills application. It handles image upload within Virtual Agent conversations. For this lab, you will duplicate the topic into your scoped application so it can be used by the First Responder Operations Analyst Agent.
 
-1. In Assistant Designer, click the **Asset library** tab
-2. Select the Topics sub-tab
-3. In the search bar, type Upload image
-4. Confirm the Out Of Box (OOB) topic appears — it should show as Published and Active
+![Navigate back to Assistant Designer homepage](</screenshots/va-designer-homepage.png>)
+
+1. Navigate back to the Assistant Designer homepage
+2. In Assistant Designer, click the **Asset library** tab
+3. Select the Topics sub-tab
+4. In the search bar, type Upload image
+5. Confirm the Out Of Box (OOB) topic appears — it should show as Published and Active
 
 ![NAVA Chat Features](</screenshots/va-topic-tool-uploadimage-1.png>)
 
@@ -241,11 +244,10 @@ You should now see **two** topics:
 
 ![Topic Properties — Advanced Properties](</screenshots/va-topic-tool-uploadimage-5.png>)
 
-4. In the **System Roles** dialog, move the following two roles from **Selected** to **Available** (essentially removing it from the System Roles):
+4. In the **System Roles** dialog, move the 'sn_uxc_gen_ai.platform_ai_image_processor' role from **Selected** to **Available** (essentially removing it from the System Roles):
 
 | Role                                        | Purpose                                                                      |
 | ------------------------------------------- | ---------------------------------------------------------------------------- |
-| `wm_agent`                                  | Allows Workspace agents to invoke this topic                                 |
 | `sn_uxc_gen_ai.platform_ai_image_processor` | Grants the AI image processing capability required by the Process image node |
 
 ![System Roles — Selection Dialog](</screenshots/va-topic-tool-uploadimage-6.png>)
