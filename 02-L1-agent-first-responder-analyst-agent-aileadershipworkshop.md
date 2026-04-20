@@ -64,6 +64,9 @@ Configure the following fields:
 
 **Retrieve AI Agent Description, role and List of steps:** [AI Agent definition](https://github.com/raadlakha/AILab2.0/blob/main/AI%20Agents%20definition%20and%20prompts/First-responder-operations-analyst-agent-definition)
 
+![Define the specialty — agent name and description](</screenshots/L1-Agent.png>)
+If there are any existing AI Agents recommended, click 'Ignore and Continue'
+
 ***
 
 ### Step 2 — Add Tools and Information
@@ -446,7 +449,7 @@ After the category selection, the agent continues collecting the structured cont
 
 #### 7.9 — Verify the Incident Record in the Platform
 
-25. End the impersonation session (or open a new browser tab as System Administrator)
+25. **End the impersonation session** and return back to System Administrator user.
 26. Navigate to the **incident extend** table: type `x_snc_apacaienable_incident_extend.list` in the Filter navigator
 27. Locate the newly created Incident by the reference number from Step 24 (e.g., `INCE0012003`)
 28. Open the Incident record and verify the following fields:
