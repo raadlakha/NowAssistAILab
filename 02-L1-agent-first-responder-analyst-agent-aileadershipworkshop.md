@@ -14,7 +14,7 @@ This section covers building the **AI Agent** only.
 
 ## Role in the Requestor Flow
 
-![L1 Agent Flow Overview](../screenshots/flow-L1-agent.png)
+![L1 Agent Flow Overview](/screenshots/flow-L1-agent.png)
 
 ***
 
@@ -45,11 +45,11 @@ This section covers building the **AI Agent** only.
 
 Navigate to **All → AI Agent Studio → Create and manage → AI Agents → Add → Chat**.
 
-![Create a new AI Agent (Chat type)](<../screenshots/flow-L1-agent-create-new.png>)
+![Create a new AI Agent (Chat type)](</screenshots/flow-L1-agent-create-new.png>)
 
 The wizard opens on **Define the specialty**.
 
-![Define the specialty — agent name and description](<../screenshots/L1-Agent.png>)
+![Define the specialty — agent name and description](</screenshots/L1-Agent.png>)
 
 The page instructs: _"Using clear, precise language, write the name, description, role, and list of steps this AI agent completes. Writing a clear, distinct name and description is critical because the LLM relies on the wording to correctly identify and use this agent."_
 
@@ -70,7 +70,7 @@ Configure the following fields:
 
 The wizard advances to **Add tools and information**.
 
-![Add tools and information — tool list](<../.gitbook/assets/L1-Agent2 (1).png>)
+![Add tools and information — tool list](</screenshots/L1-Agent2.png>)
 
 The page reads: _"Tools provide the essential functionality and data an AI agent needs to carry out its role. An AI agent selects a tool based on the tool's name and description, which need to be clearly written."_
 
@@ -84,7 +84,7 @@ Four tools must be added. Use the **Add tool ▼** dropdown to select the tool t
 
 From **Add tool ▼** select **Knowledge graph**.
 
-![Add a Knowledge graph dialog](<../.gitbook/assets/L1-agent-tool-kg1 (1).png>)
+![Add a Knowledge graph dialog](</screenshots/L1-agent-tool-kg1.png>)
 
 Configure the following fields:
 
@@ -111,9 +111,9 @@ Click **Add**.
 
 From **Add tool ▼** select **File upload**.
 
-![Add file upload dialog — fields](<../.gitbook/assets/L1-agent-tool4-file-upload (1).png>)
+![Add file upload dialog — fields](</screenshots/L1-agent-tool4-file-upload.png>)
 
-![Add file upload dialog — attachment](<../.gitbook/assets/L1-agent-tool4-file-upload2 (1).png>)
+![Add file upload dialog — attachment](</screenshots/L1-agent-tool4-file-upload2.png>)
 
 Configure the following fields:
 
@@ -140,9 +140,9 @@ Click **Add**.
 
 From **Add tool ▼** select **Conversational topic**.
 
-![Add tool dropdown — Conversational topic highlighted](<../.gitbook/assets/L1-Agent-Tool1 (1).png>)
+![Add tool dropdown — Conversational topic highlighted](</screenshots/L1-Agent-Tool1.png>)
 
-![Add a conversational topic dialog](<../.gitbook/assets/L1-agent-tool-conv-topic (1).png>)
+![Add a conversational topic dialog](</screenshots/L1-agent-tool-conv-topic.png>)
 
 Configure the following fields:
 
@@ -171,11 +171,11 @@ Click **Add**.
 
 From **Add tool ▼** select **Subflow**.
 
-![Add tool dropdown — Subflow highlighted](<../.gitbook/assets/L1-agent-tool2 (1).png>)
+![Add tool dropdown — Subflow highlighted](</screenshots/L1-agent-tool2.png>)
 
-![Add a subflow — subflow selection and inputs](<../.gitbook/assets/L1-agent-tool2-subflow (1).png>)
+![Add a subflow — subflow selection and inputs](</screenshots/L1-agent-tool2-subflow.png>)
 
-![Add a subflow — tool name and description](<../.gitbook/assets/L1-agent-tool2-subflow2 (1).png>)
+![Add a subflow — tool name and description](</screenshots/L1-agent-tool2-subflow2.png>)
 
 Configure the following fields:
 
@@ -211,7 +211,7 @@ Click **Add**.
 
 The wizard advances to **Define security controls → Define user access**.
 
-![Define user access — Any authenticated user](<../screenshots/L1-agent-user-access-2.png>)
+![Define user access — Any authenticated user](</screenshots/L1-agent-user-access-2.png>)
 
 | Field           | Value                       |
 | --------------- | --------------------------- |
@@ -225,7 +225,7 @@ Click **Save and continue**.
 
 The wizard advances to **Define data access**.
 
-![Define data access — user identity](<../screenshots/L1-agent-data-access-2.png>)
+![Define data access — user identity](</screenshots/L1-agent-data-access-2.png>)
 
 | Field                  | Value          |
 | ---------------------- | -------------- |
@@ -248,7 +248,7 @@ Click **Save and continue**.
 
 The wizard advances to **Select channels and status**.
 
-![Select channels and status](<../screenshots/L1-agent-channel-status.png>)
+![Select channels and status](</screenshots/L1-agent-channel-status.png>)
 
 | Field                                   | Value                               |
 | --------------------------------------- | ----------------------------------- |
@@ -269,12 +269,12 @@ Click **Save and continue** to complete the agent configuration.
 1. In the ServiceNow platform UI, click on your **user avatar / profile icon** in the top-right banner
 2. From the dropdown menu, select **Impersonate user**
 
-![User Menu — Impersonate user option](../.gitbook/assets/L1-agent-testing-1.png)
+![User Menu — Impersonate user option](/screenshots/L1-agent-testing-1.png)
 
 3. In the **Impersonate user** dialog, search for or select **alex rai** (`alex.rai`) from the user list
 4. Click **Impersonate user** to confirm
 
-![Impersonate user dialog — Alex Rai selected](../.gitbook/assets/L1-agent-testing-2.png)
+![Impersonate user dialog — Alex Rai selected](/screenshots/L1-agent-testing-2.png)
 
 > **Why impersonate Alex Rai?** Running this evaluation as a non System Administrator user allows us to see the Knowledge Graph in action, as well as AI Agent discovery (only authenticated users can see this AI Agent).
 
@@ -286,7 +286,7 @@ Click **Save and continue** to complete the agent configuration.
 6. Click the **chat icon** in the bottom-right corner to open the **Now Support** chat widget
 7. Verify that the widget loads and greets you with a message such as _"Hi alex, how can I help you?"_
 
-![Service Portal — Now Support chat widget open](../.gitbook/assets/L1-agent-testing-3.png)
+![Service Portal — Now Support chat widget open](/screenshots/L1-agent-testing-3.png)
 
 > **Checkpoint:** Confirm the top-right corner of the Service Portal shows **alex rai** as the logged-in user. If it still shows System Administrator or another user, the impersonation did not take effect — go back and re-impersonate.
 
@@ -301,7 +301,7 @@ Click **Save and continue** to complete the agent configuration.
    * The agent addresses the user by name (_"Hello Alex Rai"_) — confirming **Tool 1 (Knowledge Graph)** fired silently and retrieved the user's identity
    * The agent asks a clarification question to categorise the issue, presenting **Hardware** and **Software** as selectable options
 
-![Chat — Agent started, user identified, category options presented](../screenshots/testing-agent1-hw-sw.png)
+![Chat — Agent started, user identified, category options presented](/screenshots/testing-agent1-hw-sw.png)
 
 > **What to verify:**
 
@@ -320,12 +320,12 @@ After the category selection, the agent continues collecting the structured cont
 10. Select **Hardware** — the agent then asks which specific product or system is affected. Reply **`Veritas NetBackup`**.
 11. The agent asks for the hostname of the affected device. Reply with the any hostname (e.g., **`vnb-01-sn1`**, there is no fixed hostname).
 
-![Chat — Hardware selected, product identified as Veritas NetBackup, hostname provided](../screenshots/testing-agent1-pn-hn.png)
+![Chat — Hardware selected, product identified as Veritas NetBackup, hostname provided](/screenshots/testing-agent1-pn-hn.png)
 
 12. The agent then asks when the issue first occurred — select the date and time using the calendar (e.g., **Saturday, April 14, 2026 2:44 PM**).
 13. The agent asks whether this is affecting a single device or multiple devices. Reply either **`Single device`** or **`Multiple device`**.
 
-![Chat — Date and time selected, device scope confirmed as single device](../screenshots/testing-agent1-datetime-devicetype.png)
+![Chat — Date and time selected, device scope confirmed as single device](/screenshots/testing-agent1-datetime-devicetype.png)
 
 > **Note:** The exact questions the agent asks and their order may vary depending on how you have authored the agent's description, role, and list of steps. The agent uses its LLM reasoning to determine which context fields it still needs before proceeding — these screenshots reflect one representative flow.
 
@@ -340,7 +340,7 @@ After the category selection, the agent continues collecting the structured cont
     * If no matching resolution steps are found, the agent informs the user and offers to raise an Incident (e.g., _"Unfortunately, I could not find any documented troubleshooting steps for the Veritas NetBackup server overheating and LED lights turning red."_)
     * The agent presents **Yes** and **No** buttons asking whether to proceed with Incident creation
 
-![Chat — Troubleshooting Guide used, no resolution found, Incident offer](../.gitbook/assets/L1-agent-testing-5.png)
+![Chat — Troubleshooting Guide used, no resolution found, Incident offer](/screenshots/L1-agent-testing-5.png)
 
 > **What to verify:**
 
@@ -361,7 +361,7 @@ After the category selection, the agent continues collecting the structured cont
     * _"Please upload an image"_
     * A **"Click here to upload an image."** link/button rendered by the Virtual Agent topic
 
-![Chat — Image upload prompt rendered](../.gitbook/assets/L1-agent-testing-6.png)
+![Chat — Image upload prompt rendered](/screenshots/L1-agent-testing-6.png)
 
 > **What to verify:**
 
@@ -383,7 +383,7 @@ After the category selection, the agent continues collecting the structured cont
     * A confirmation message: _"The attachment is available in this link"_
     * The agent shows a **"Processing..."** indicator as it processes the uploaded image
 
-![Chat — Image uploaded, attachment confirmed, processing](../.gitbook/assets/L1-agent-testing-7.png)
+![Chat — Image uploaded, attachment confirmed, processing](/screenshots/L1-agent-testing-7.png)
 
 > **What to verify:**
 
@@ -406,7 +406,7 @@ After the category selection, the agent continues collecting the structured cont
     * **Issue description** — the user's reported symptoms (e.g., `Server overheating, LED lights turning from green to red`)
 22. The agent asks: _"Is all of the above information correct? Shall I go ahead and raise an incident on your behalf? Please reply 'yes' to confirm or 'no' to make changes."_
 
-![Chat — Issue summary presented with confirmation prompt](../.gitbook/assets/L1-agent-testing-9.png)
+![Chat — Issue summary presented with confirmation prompt](/screenshots/L1-agent-testing-9.png)
 
 > **What to verify:**
 
@@ -432,7 +432,7 @@ After the category selection, the agent continues collecting the structured cont
     * The agent may also flag that the issue has been escalated for priority review
     * A closing message: _"All done! Is there anything else I can help you with?"_
 
-![Chat — Incident created with reference number INCE0012003](../.gitbook/assets/L1-agent-testing-8.png)
+![Chat — Incident created with reference number INCE0012003](/screenshots/L1-agent-testing-8.png)
 
 > **What to verify:**
 

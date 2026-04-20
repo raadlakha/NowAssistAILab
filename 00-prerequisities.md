@@ -24,7 +24,7 @@ All lab artefacts — topics, agents, agentic workflows, flow actions, and table
 2. In the **Application scope** dropdown, type `x_nava` in the filter field
 3. Select **x\_nava\_agentic\_lab** from the results
 
-![Change Application Scope to x\_nava\_agentic\_lab](<../.gitbook/assets/change-scope-to-x_nava_agentic_lab (1).png>)
+![Change Application Scope to x\_nava\_agentic\_lab](</screenshots/change-scope-to-x_nava_agentic_lab.png>)
 
 4. Confirm the scope picker now displays **x\_nava\_agentic\_lab** as the active scope
 
@@ -43,30 +43,30 @@ You need to change the **Run As** property to **System User** so the subflow exe
 1. In the **Filter navigator**, type `workflow studio`
 2. Under **Process Automation**, click **Workflow Studio**
 
-![Filter Navigator — Workflow Studio](../.gitbook/assets/flowaction-check1.png)
+![Filter Navigator — Workflow Studio](/screenshots/flowaction-check1.png)
 
 3. In Workflow Studio, click the **Subflows** tab
 4. Filter the subflow list by **Name contains `Create and submit`**
 
-![Workflow Studio — Subflows Tab with Filter](../.gitbook/assets/flowaction-check2.png)
+![Workflow Studio — Subflows Tab with Filter](/screenshots/flowaction-check2.png)
 
 5. Confirm the subflow **Create and submit Incident record with image upload(s) subflow** appears — it should show **Published**, **Active: true**, and belong to the `x_nava_agentic_lab` application
 
-![Subflows — Filtered Result](../.gitbook/assets/flowaction-check3.png)
+![Subflows — Filtered Result](/screenshots/flowaction-check3.png)
 
 6. Click on the subflow name to open it
 7. Click on Edit subflow to begin editing the subflow
 
-![Subflow — Inputs and Structure](../.gitbook/assets/flowaction-check4.png)
+![Subflow — Inputs and Structure](/screenshots/flowaction-check4.png)
 
 8. Click the **kebab menu** (three-dot icon, top-right) and select **Properties**
 
-![Subflow — Kebab Menu with Properties](../.gitbook/assets/flowaction-check5.png)
+![Subflow — Kebab Menu with Properties](/screenshots/flowaction-check5.png)
 
 9. In the **Subflow properties** dialog, expand **Advanced Options**
 10. Change the **Run As** dropdown from `User who initiates session` to **`System User`**
 
-![Subflow Properties — Run As Changed to System User](../.gitbook/assets/flowaction-check6.png)
+![Subflow Properties — Run As Changed to System User](/screenshots/flowaction-check6.png)
 
 11. Click **Update** to save the change and finally, publish the subflow again
 
@@ -81,7 +81,7 @@ You need to change the **Run As** property to **System User** so the subflow exe
 1. In the **Filter navigator**, type `user admin`
 2. Under **User Administration**, click **Users**
 
-![Filter Navigator — User Administration > Users](../.gitbook/assets/check-user-permissions-1.png)
+![Filter Navigator — User Administration > Users](/screenshots/check-user-permissions-1.png)
 
 ***
 
@@ -89,20 +89,20 @@ You need to change the **Run As** property to **System User** so the subflow exe
 
 3. In the **Users** list, filter by **User ID starts with `admin`**
 
-![Users List — Filtered by admin](../screenshots/check-user-permissions-8.png)
+![Users List — Filtered by admin](/screenshots/check-user-permissions-8.png)
 
 4. Click on **admin** to open the User record
 5. Scroll down to the **Roles** section and click on **Edit**
 
-![User Record — Roles of admin user](../screenshots/check-user-permissions-9.png)
+![User Record — Roles of admin user](/screenshots/check-user-permissions-9.png)
 
 6. Add (move to the right) the **sn_aia.admin** role to the Admin user. Once done, click on the **Save** button.
 
-![Add sn_aia.admin role to Admin user)](../screenshots/check-user-permissions-10.png)
+![Add sn_aia.admin role to Admin user)](/screenshots/check-user-permissions-10.png)
 
 6. Finally, click on the **Update** button on the top right hand corner to ensure that the sn_aia.admin role addition is done successfully.
 
-![Save role changes to Admin user)](../screenshots/check-user-permissions-11.png)
+![Save role changes to Admin user)](/screenshots/check-user-permissions-11.png)
 
 7. **Log out of your instance and relog back in to ensure that the updated role ACLs are being picked up. It is mandatory for this step to be completed.**
 
