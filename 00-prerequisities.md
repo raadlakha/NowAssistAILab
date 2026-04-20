@@ -68,7 +68,7 @@ You need to change the **Run As** property to **System User** so the subflow exe
 
 ![Subflow Properties — Run As Changed to System User](/screenshots/flowaction-check6.png)
 
-11. Click **Update** to save the change and finally, publish the subflow again
+11. Click **Update** to save the change and finally, **Publish** the subflow again
 
 > **Why System User?** When the AI Agent fires this subflow during a Virtual Agent chat session, the session runs as the end user. If Run As is set to "User who initiates session", the subflow inherits that user's ACLs — which typically do not include read/write access to the Incident Extend custom table. Setting Run As to **System User** ensures the subflow has the necessary permissions to create the Incident record, attach uploaded images, and set all required fields — regardless of who is chatting with the agent.
 
