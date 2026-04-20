@@ -152,7 +152,7 @@ The final section is **Review**. Confirm all settings look correct across each s
 
 ### Step 10: Verify the Chat Widget in Service Portal
 
-1. Navigate to your instance's **Service Portal** (`/sp`)
+1. Navigate to your instance's **Service Portal** (extension of `/sp` embedded to the end of the instance URL). Example: https://<instance_host_name>.com/sp
 2. Click the chat icon (bottom-right corner)
 3. Verify the Virtual Agent widget loads and NAVA responds
 4. Check and confirm that the Chat Widget populated in Service Portal is the Assistant that you had just configured in Virtual Agent Designer.
@@ -169,9 +169,9 @@ The **Upload image** topic is an out-of-the-box (OOB) topic provided by the Plat
 
 1. Navigate back to the Assistant Designer homepage
 2. In Assistant Designer, click the **Asset library** tab
-3. Select the Topics sub-tab
+3. Select the **Topics** sub-tab
 4. In the search bar, type Upload image
-5. Confirm the Out Of Box (OOB) topic appears — it should show as Published and Active
+5. Confirm the Out Of Box (OOB) topic appears — it should show as **Status: Published** and **Active: Active**
 
 ![NAVA Chat Features](</screenshots/va-topic-tool-uploadimage-1.png>)
 
@@ -252,7 +252,7 @@ You should now see **two** topics:
 
 ![System Roles — Selection Dialog](</screenshots/va-topic-tool-uploadimage-6.png>)
 
-5. Click **Save** on the System Roles dialog
+5. Click **Save** on the System Roles dialog (Top right hand corner)
 6. Confirm that the roles have been removed
 
 ![Topic Properties — Roles Configured](</screenshots/va-topic-tool-uploadimage-7.png>)

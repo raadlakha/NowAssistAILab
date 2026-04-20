@@ -8,7 +8,7 @@
 
 The **First Responder Operations Analyst Agent** is an AI Agent built in AI Agent Studio. It is the first automated intelligence that engages after NAVA routes a user message — handling the conversation from initial user identification through to Incident creation.
 
-This section covers building the **AI Agent** only.
+This section covers building and testing the **AI Agent** only.
 
 ***
 
@@ -256,11 +256,10 @@ The wizard advances to **Select channels and status**.
 
 | Field                                   | Value                               |
 | --------------------------------------- | ----------------------------------- |
-| **Engage via the Now Assist panel**     | `OFF`                               |
 | **Engage via Virtual Agent assistants** | `ON`                                |
 | **Chat assistants**                     | `Now Assist in Virtual Agent - AI Lab` |
 
-> Select `Now Assist in Virtual Agent - AI Lab` — the assistant created in Capability 01. The Now Assist panel toggle stays **OFF** deliberately — this agent is triggered through NAVA, not the panel.
+> Select `Now Assist in Virtual Agent - AI Lab` — the assistant created in Capability 01.
 
 Click **Save and continue** to complete the agent configuration.
 
@@ -326,7 +325,7 @@ After the category selection, the agent continues collecting the structured cont
 
 ![Chat — Hardware selected, product identified as Veritas NetBackup, hostname provided](/screenshots/testing-agent1-pn-hn.png)
 
-12. The agent then asks when the issue first occurred — select the date and time using the calendar (e.g., **Saturday, April 14, 2026 2:44 PM**).
+12. The agent then asks when the issue first occurred — select the date and time using the calendar picker.
 13. The agent asks whether this is affecting a single device or multiple devices. Reply either **`Single device`** or **`Multiple device`**.
 
 ![Chat — Date and time selected, device scope confirmed as single device](/screenshots/testing-agent1-datetime-devicetype.png)
@@ -405,9 +404,10 @@ After the category selection, the agent continues collecting the structured cont
     * **Issue type** — the category selected earlier (e.g., `Software`)
     * **Affected product / system** — identified from the conversation context (e.g., `Veritas NetBackup`)
     * **Hostname / IP address** — retrieved from the conversation (e.g., `veritas-backup-01`)
-    * **Date/Time of occurrence** — when the issue was reported (e.g., `04-03-2026 11:11:00`)
-    * **Screenshot** — upload status (e.g., `Uploaded`)
-    * **Issue description** — the user's reported symptoms (e.g., `Server overheating, LED lights turning from green to red`)
+    * **Description of Issue** — the user's reported symptoms (e.g., `Server overheating, LED lights turning from green to red`)
+    * **Date of occurrence** — date when the issue was reported (e.g., `04-03-2026`)
+    * **Date of occurrence** — time when the issue was reported (e.g., `08:29:00`)
+    * **Screenshot** — upload status (e.g., `Uploaded or image name`)
 22. The agent asks: _"Is all of the above information correct? Shall I go ahead and raise an incident on your behalf? Please reply 'yes' to confirm or 'no' to make changes."_
 
 ![Chat — Issue summary presented with confirmation prompt](/screenshots/L1-agent-testing-9.png)
@@ -450,8 +450,8 @@ After the category selection, the agent continues collecting the structured cont
 
 #### 7.9 — Verify the Incident Record in the Platform
 
-25. **End the impersonation session** and return back to System Administrator user.
-26. Navigate to the **incident extend** table: type `x_snc_apacaienable_incident_extend.list` in the Filter navigator
+25. Return back to your instance URL and **end the impersonation session** (return back to System Administrator user).
+26. Navigate to the **incident extend** table: type `x_snc_apacaienable_incident_extend.LIST` in the Filter navigator
 27. Locate the newly created Incident by the reference number from Step 24 (e.g., `INCE0012003`)
 28. Open the Incident record and verify the following fields:
 
@@ -467,10 +467,9 @@ After the category selection, the agent continues collecting the structured cont
 
 > **If the Incident was not created:** Check the following:
 >
-> * Subflow **Run As** is set to **System User** (Pre-Requisite 5)
+> * Subflow **Run As** is set to **System User** (Pre-Requisite Step 2)
 > * All four mandatory subflow inputs are being passed correctly by the agent
 > * The `x_nava_agentic_lab` application scope is active
-> * Alex Rai has the `x_snc_apacaienable.incident_extend_user` role (Pre-Requisite 6)
 
 ***
 
