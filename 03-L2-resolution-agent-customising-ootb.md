@@ -8,7 +8,7 @@
  
 The **Incident Investigation and Resolution AI Agent** is a customised copy of the OOTB **ITSM incident resolution investigation AI agent** — one of the platform AI agents that ships with the IT Service Management AI agent collection.
  
-Instead of building an agent from scratch (as in Capability 02), this section demonstrates how to **duplicate an existing platform agent and adapt it** to work with the custom Incident Extend table (`x_snc_apacaienable_incident_extend`). The result is a fully functional resolution agent — complete with pre-built tools for incident lookup, knowledge retrieval, similar incident search, and work notes — ready in minutes with only a single script change.
+Instead of building an agent from scratch (As we did in Capability 02 - L1 First Responder Operations Analyst Agent), this section demonstrates how to **duplicate an existing platform agent and adapt it** to work with the custom Incident Extend table (`x_snc_apacaienable_incident_extend`). The result is a fully functional resolution agent — complete with pre-built tools for incident lookup, knowledge retrieval, similar incident search, and work notes — ready in minutes with only a single script change.
  
 ***
  
