@@ -56,9 +56,11 @@ The AI Agents list displays all agents across the instance. To find the OOTB ITS
  
 1. In the **Application** column, right-click (or click the cell actions icon) on any row showing `IT Service Management AI agent collection`
 2. Select **Show Matching** to filter the list to only ITSM platform agents
+
 ![AI Agent Studio — Show Matching on IT Service Management AI agent collection](/screenshots/customise-ootb-ai-agent-1.png)
  
 3. Scroll through the filtered list to locate **ITSM incident resolution investigation AI agent**
+
 ![Filtered AI Agent list — ITSM incident resolution investigation AI agent visible](/screenshots/customise-ootb-ai-agent-2.png)
  
 > **What you're looking at:** These are all the AI agents that ship with the IT Service Management AI agent collection — purpose-built for incident investigation, change management, CI suggestions, and more. Each one comes pre-configured with tools, descriptions, and roles.
@@ -68,9 +70,11 @@ The AI Agents list displays all agents across the instance. To find the OOTB ITS
 ### Step 2 — Duplicate the Agent
  
 1. On the **ITSM incident resolution investigation AI agent** row, click the **Duplicate** icon (clipboard icon on the far right)
+
 ![Duplicate icon on the ITSM incident resolution investigation AI agent row](/screenshots/customise-ootb-ai-agent-3.png)
  
 2. A confirmation dialog appears: _"You are duplicating an AI Agent. This will produce an identical AI agent. Fine-tune the copied AI agent with distinct instructions and tools by following the AI agent configuration guided setup."_
+
 ![Duplicate confirmation dialog](/screenshots/customise-ootb-ai-agent-4.png)
  
 3. Click **Duplicate**
@@ -121,6 +125,7 @@ The following tools are pre-configured:
 The OOTB agent's **Get details of Incident** tool queries the standard `incident` table. Since the lab uses a custom extended table, the script must be updated to query `x_snc_apacaienable_incident_extend` instead.
  
 1. Click on **Get details of Incident** to open the tool configuration dialog
+
 ![Get details of Incident — original script querying "incident" table](/screenshots/customise-ootb-ai-agent-7.png)
  
 2. In the **Script** editor, locate the `GlideRecordSecure` initialisation line:
@@ -154,6 +159,7 @@ For lab testing purposes, add the `admin` role so System Administrators can acce
  
 1. Click the **Edit** (pencil) icon on the ACL row
 2. In the **Edit ACL** dialog, add `admin` to the **Role** field alongside the existing `itil` and `sn_service_desk_agent` roles
+
 ![Edit ACL — adding admin role](/screenshots/customise-ootb-ai-agent-10.png)
  
 3. Click **Update**
@@ -219,10 +225,12 @@ Navigate to **AI Agent Studio → Testing** and configure a new test:
 If the Testing tab displays a banner reading _"Now Assist Panel Disabled. To start testing, you need to turn on the Now Assist panel by going to Now Assist Admin."_ — follow these steps:
  
 1. Click **Edit this setting** from the Testing page
+
 ![Now Assist Admin — Now Assist panel with Turn on button](/screenshots/customise-ootb-ai-agent-13.png)
  
 2. Click **Turn on**
 3. A success dialog confirms: _"Now Assist panel is now on"_
+
 ![Success — Now Assist panel is now on](/screenshots/customise-ootb-ai-agent-14.png)
  
 4. Close the dialog
@@ -236,10 +244,12 @@ After enabling the Now Assist panel, refresh the Testing tab again and it will d
  
 1. Click **Set up**
 2. Open the **Now Assist Panel - Platform (default)** assistant — it will show as **Inactive**
+
 ![Assistant Designer — Now Assist Panel - Platform (default) Inactive](/screenshots/customise-ootb-ai-agent-16.png)
  
 3. Click **Activate** in the top-right corner
 4. Confirm the activation — a banner confirms _"Now Assist Panel - Platform (default) was activated"_
+
 ![Assistant Designer — Now Assist Panel - Platform (default) Activated](/screenshots/customise-ootb-ai-agent-17.png)
 
 5. Return back to the Testing tab in AI Agent Studio to test your AI Agent.
