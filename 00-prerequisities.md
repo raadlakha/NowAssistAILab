@@ -16,7 +16,7 @@ Lab resources that you will need in order to complete the lab: [Lab resources fo
 
 ### Pre-Requisite 1: Switch to the `x_nava_agentic_lab` Application Scope
 
-All lab artefacts — topics, agents, agentic workflows, flow actions, and tables — live in the **x\_nava\_agentic\_lab** scoped application. If you build or configure components in the wrong scope (e.g., Global), they will not be visible to the AI Agent at runtime and cross-scope privilege errors will occur.
+All lab artefacts — topics, agents, agentic workflows, flow actions, and tables — live in the x\_nava\_agentic\_lab scoped application. If you build or configure components in the wrong scope (e.g., Global), they will not be visible to the AI Agent at runtime and cross-scope privilege errors will occur.
 
 ### Steps
 
