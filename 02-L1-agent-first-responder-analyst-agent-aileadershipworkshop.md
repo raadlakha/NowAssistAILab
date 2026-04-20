@@ -64,9 +64,9 @@ Configure the following fields:
 
 **Retrieve AI Agent Description, role and List of steps:** [AI Agent definition](https://github.com/raadlakha/AILab2.0/blob/main/AI%20Agents%20definition%20and%20prompts/First-responder-operations-analyst-agent-definition)
 
-![Suggested AI agents](</screenshots/L1-agent-other-suggested-ai-agents.png>)
-
 If there are any existing AI Agents recommended, click 'Ignore and Continue'
+
+![Suggested AI agents](</screenshots/L1-agent-other-suggested-ai-agents.png>)
 
 ***
 
