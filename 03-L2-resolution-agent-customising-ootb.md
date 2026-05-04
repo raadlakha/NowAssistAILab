@@ -356,5 +356,3 @@ When neither similar incidents nor relevant knowledge articles are found (or bot
 | Data access (add role)      | ✓       |           |
  
 > **One line of code. Three configuration fields. A fully functional resolution agent.** This is the power of customising OOTB platform agents — you inherit the engineering investment ServiceNow has made in tool descriptions, LLM instructions, and execution logic, and simply redirect it to your use case.
- 
-***
