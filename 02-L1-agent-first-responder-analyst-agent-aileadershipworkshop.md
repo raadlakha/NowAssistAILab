@@ -469,7 +469,7 @@ After the category selection, the agent continues collecting the structured cont
 28. Under **All Results**, click **incident extends** to open the list view.
 
 ![Filter navigator — searching for incident extend](/screenshots/L1-agent-testing-11.png)
- 
+
 ***
  
 ##### 7.9c — Personalise the List Columns
@@ -479,20 +479,20 @@ The default list view does not show the custom fields populated by the AI Agent.
 29. Click the **Personalize List** icon (gear/globe icon in the list header bar) to open the **Personalize List Columns** dialog.
 
 ![List header — Personalize List icon](/screenshots/L1-agent-testing-12.png)
- 
+
 30. In the **Available** column on the left, locate and select the following custom fields (highlighted in blue at the bottom of the list): **error code**, **model details**, **product bar code**, **product name**, **serial number**.
 31. Click the **Add (>)** button to move them into the **Selected** column on the right.
 32. Click **OK** to apply.
 
 ![Personalize List Columns dialog — custom fields selected for addition](/screenshots/L1-agent-testing-13.png)
- 
+
 ***
  
 ##### 7.9d — Locate and Verify the Incident Record
- 
+
 33. The list view now displays the extended columns. Locate the newly created Incident by the reference number returned in Step 24 — it should appear as the most recent record (e.g., `INCE0013001`).
 ![Incident extend list view — full record list with custom columns visible](/screenshots/L1-agent-testing-14.png)
- 
+
 34. Verify the following fields on the record:
 
 | Field             | Expected Value                                                                                      |
