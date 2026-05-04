@@ -388,6 +388,10 @@ After the category selection, the agent continues collecting the structured cont
 
 ![Chat — Image uploaded, attachment confirmed, processing](/screenshots/L1-agent-testing-7a.png)
 
+![Consent to uploading additional images](/screenshots/L1-agent-testing-7b.png)
+
+![Upload second image](/screenshots/L1-agent-testing-7c.png)
+
 > **What to verify:**
 
 | Check                   | Expected Behaviour                                                       |
@@ -395,18 +399,19 @@ After the category selection, the agent continues collecting the structured cont
 | Image upload            | Image thumbnail appears in the chat conversation                         |
 | Attachment confirmation | "The attachment is available in **this link**" message displayed         |
 | Processing              | "Processing..." indicator visible — agent is preparing the issue summary |
+| Multiple uploads        | Ensure that multiple images can be uploaded to the VA chat               |
 
 ***
 
 #### 7.7 — Review the Issue Summary
 
 21. Once processing completes, the agent presents a **summary of all information collected** during the conversation — including the uploaded screenshot — and asks for confirmation before raising the Incident. You should see a structured summary that includes:
-    * **Issue type** — the category selected earlier (e.g., `Software`)
+    * **Issue type** — the category selected earlier (e.g., `Hardware`)
     * **Affected product / system** — identified from the conversation context (e.g., `Veritas NetBackup`)
     * **Hostname / IP address** — retrieved from the conversation (e.g., `veritas-backup-01`)
-    * **Description of Issue** — the user's reported symptoms (e.g., `Server overheating, LED lights turning from green to red`)
-    * **Date of occurrence** — date when the issue was reported (e.g., `04-03-2026`)
-    * **Date of occurrence** — time when the issue was reported (e.g., `08:29:00`)
+    * **Description of Issue** — the user's reported symptoms (e.g., `Logged error code 37 from Veritas NetBackup management console`)
+    * **Date of occurrence** — date when the issue was reported (e.g., `04-08-2026`)
+    * **Date of occurrence** — time when the issue was reported (e.g., `18:22`)
     * **Screenshot** — upload status (e.g., `Uploaded or image name`)
 22. The agent asks: _"Is all of the above information correct? Shall I go ahead and raise an incident on your behalf? Please reply 'yes' to confirm or 'no' to make changes."_
 
@@ -431,8 +436,8 @@ After the category selection, the agent continues collecting the structured cont
 
 24. The agent invokes **Tool 4 (Subflow — Create Incident Case)** and after processing completes, you should see:
     * A confirmation that the Incident has been successfully raised
-    * The **Incident reference number** (e.g., `INCE0012003`)
-    * A message indicating the support team will review the issue (e.g., _"Your incident has been successfully raised. Your reference number is INCE0012003. Our support team will review this and be in touch shortly."_)
+    * The **Incident reference number** (e.g., `INCE0013001`)
+    * A message indicating the support team will review the issue (e.g., _"Your incident has been successfully raised. Your reference number is INCE0013001. Our support team will review this and be in touch shortly."_)
     * The agent may also flag that the issue has been escalated for priority review
     * A closing message: _"All done! Is there anything else I can help you with?"_
 
