@@ -384,4 +384,4 @@ Click **Complete setup**.
 
 ## Next Step
 
-Continue to [04a — Now Assist Skill Kit: CreateOptimalSearchQuery](04a-now-assist-skill-kit-createoptimalsearchqueryskill.md) to build the first of three Custom Now Assist Skills needed for the Resolution Pathfinder Agent.
+Continue to [02 — L1 First Responder Operations Analyst Agent](02-L1-agent-first-responder-analyst-agent-aileadershipworkshop.md) to build your first AI Agent (First Responder Operations Analyst Agent) for the Requestor flow.
