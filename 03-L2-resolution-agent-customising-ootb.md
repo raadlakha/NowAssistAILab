@@ -258,7 +258,7 @@ After enabling the Now Assist panel, refresh the Testing tab again and it will d
 
 ![Settings — Display experiences — Unified Navigation app shell added](/screenshots/customise-ootb-ai-agent-22.png)
 
-6. Click **Activate** in the top-right corner (now enabled)
+6. Click **Save** and then **Activate** in the top-right corner (now enabled)
 7. Confirm the activation — a banner confirms _"Now Assist Panel - Platform (default) was activated"_
 
 ![Assistant Designer — Now Assist Panel - Platform (default) Activated](/screenshots/customise-ootb-ai-agent-17.png)
@@ -356,13 +356,5 @@ When neither similar incidents nor relevant knowledge articles are found (or bot
 | Data access (add role)      | ✓       |           |
  
 > **One line of code. Three configuration fields. A fully functional resolution agent.** This is the power of customising OOTB platform agents — you inherit the engineering investment ServiceNow has made in tool descriptions, LLM instructions, and execution logic, and simply redirect it to your use case.
- 
-### Now Assist Panel Setup
- 
-The AI Agent Studio Testing tab uses the Now Assist panel as its chat surface. If this is the first time testing from AI Agent Studio on your instance, you may need to:
- 
-1. **Enable** the Now Assist panel (Now Assist Admin → Now Assist Experiences → Now Assist panel → Turn on)
-2. **Activate** the default assistant (Assistant Designer → Now Assist Panel - Platform (default) → Activate)
-Both steps are one-time instance configuration — once completed, all subsequent agent testing from AI Agent Studio will work without further setup.
  
 ***
