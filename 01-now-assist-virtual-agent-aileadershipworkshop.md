@@ -10,7 +10,7 @@
 
 In Zurich release, NAVA is no longer a scripted conversation tree. It is powered by large language models (LLMs) and the **AI Agent Fabric**, which means conversations are handled dynamically by AI agents that reason, use tools, and take action. When a user types _"I can't access the server"_, NAVA receives the message, stamps `contact_type = chat` on the session, and routes the conversation to the appropriate AI agent.
 
-### NAVA vs. Virtual Agent — Key Distinction
+### NAVA vs Virtual Agent — Key Distinction
 
 | Component                               | Role                                                                                                                |
 | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
