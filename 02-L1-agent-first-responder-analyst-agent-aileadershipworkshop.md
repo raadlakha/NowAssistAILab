@@ -380,7 +380,7 @@ After the category selection, the agent continues collecting the structured cont
 #### 7.6 — Upload the Image
 
 18. Click **"Click here to upload an image."** to open the file picker
-19. Select an error screenshot image (e.g., a Veritas NetBackup error screen capture showing the '37' error code) and upload it. Upload both images that were provided as part of the lab resources provided by the lab.
+19. Select an error screenshot image (e.g., a Veritas NetBackup error screen capture showing the '37' error code) and upload it. Upload both images that were provided as part of the lab resources at the start of the lab.
 20. Observe the chat — you should see:
     * The uploaded image rendered as a thumbnail in the conversation
     * A confirmation message: _"The attachment is available in this link"_
@@ -457,7 +457,7 @@ After the category selection, the agent continues collecting the structured cont
  
 ##### 7.9a — End Impersonation
  
-25. Return to your instance URL. Click your **user avatar** in the top-right banner — the profile flyout confirms you are still impersonating **alex rai** (shown as _"Impersonating User"_).
+25. Return to your instance URL (remove the "/sp" from your instance URL). Click your **user avatar** in the top-right banner — the profile flyout confirms you are still impersonating **alex rai** (shown as _"Impersonating User"_).
 26. Click **End impersonation** to return to the System Administrator session.
 
 ![Platform UI — alex rai profile flyout with End impersonation highlighted](/screenshots/L1-agent-testing-10.png)
@@ -537,7 +537,7 @@ The default list view does not show the custom fields populated by the AI Agent.
 | 7.5       | Issue Summary confirmation     | Agent presents structured summary of all collected information; user confirms before proceeding  |
 | 7.6       | Tool 3 — Upload Image          | Native file upload prompt rendered in chat                                                       |
 | 7.7–7.8   | Tool 4 — Create Incident Case  | Image uploaded, Incident reference number returned (INCE prefix)                                 |
-| 7.9       | Post-creation verification     | Incident record fields correct; `channel = chat`; attachments present                            |
+| 7.9       | Post-creation verification     | Incident record fields correct; attachments present                                              |
 
 ***
 
@@ -551,9 +551,9 @@ The default list view does not show the custom fields populated by the AI Agent.
 | Tool 2           | File Upload — `Troubleshooting Resolution Guide`                         |
 | Tool 3           | Conversational Topic — `Upload image x_nava_agentic_lab`                 |
 | Tool 4           | Subflow — `Create Incident Case`                                         |
-| User access      | Users with specific roles → `snc_internal`                               |
-| Data access      | Dynamic user → approved role: `snc_internal`                             |
-| Channel          | Virtual Agent — `Now Assist in Virtual Agent - AlLab`                    |
+| User access      | Any authenticated user                                                   |
+| Data access      | Dynamic user → approved role: `admin, x_snc_apacaienable.incident_extend_user`|
+| Channel          | Virtual Agent — `Now Assist in Virtual Agent - AILab`                    |
 | Now Assist panel | OFF                                                                      |
 
 ***
