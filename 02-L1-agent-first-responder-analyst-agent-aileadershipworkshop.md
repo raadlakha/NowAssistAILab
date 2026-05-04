@@ -459,6 +459,7 @@ After the category selection, the agent continues collecting the structured cont
  
 25. Return to your instance URL. Click your **user avatar** in the top-right banner — the profile flyout confirms you are still impersonating **alex rai** (shown as _"Impersonating User"_).
 26. Click **End impersonation** to return to the System Administrator session.
+
 ![Platform UI — alex rai profile flyout with End impersonation highlighted](/screenshots/L1-agent-testing-10.png)
  
 ***
@@ -491,6 +492,7 @@ The default list view does not show the custom fields populated by the AI Agent.
 ##### 7.9d — Locate and Verify the Incident Record
 
 33. The list view now displays the extended columns. Locate the newly created Incident by the reference number returned in Step 24 — it should appear as the most recent record (e.g., `INCE0013001`).
+
 ![Incident extend list view — full record list with custom columns visible](/screenshots/L1-agent-testing-14.png)
 
 34. Verify the following fields on the record:
