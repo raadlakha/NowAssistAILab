@@ -467,6 +467,7 @@ After the category selection, the agent continues collecting the structured cont
  
 27. In the **Filter navigator** (top-left), type **`incident extend`**.
 28. Under **All Results**, click **incident extends** to open the list view.
+
 ![Filter navigator — searching for incident extend](/screenshots/L1-agent-testing-11.png)
  
 ***
@@ -476,11 +477,13 @@ After the category selection, the agent continues collecting the structured cont
 The default list view does not show the custom fields populated by the AI Agent. To surface them:
  
 29. Click the **Personalize List** icon (gear/globe icon in the list header bar) to open the **Personalize List Columns** dialog.
+
 ![List header — Personalize List icon](/screenshots/L1-agent-testing-12.png)
  
 30. In the **Available** column on the left, locate and select the following custom fields (highlighted in blue at the bottom of the list): **error code**, **model details**, **product bar code**, **product name**, **serial number**.
 31. Click the **Add (>)** button to move them into the **Selected** column on the right.
 32. Click **OK** to apply.
+
 ![Personalize List Columns dialog — custom fields selected for addition](/screenshots/L1-agent-testing-13.png)
  
 ***
@@ -491,6 +494,7 @@ The default list view does not show the custom fields populated by the AI Agent.
 ![Incident extend list view — full record list with custom columns visible](/screenshots/L1-agent-testing-14.png)
  
 34. Verify the following fields on the record:
+
 | Field             | Expected Value                                                                                      |
 | ----------------- | --------------------------------------------------------------------------------------------------- |
 | Number            | `INCE0013001` (or the number returned in chat)                                                      |
