@@ -336,12 +336,12 @@ After the category selection, the agent continues collecting the structured cont
 
 #### 7.4 — Describe the Issue and Verify Troubleshooting Guide
 
-14. Provide additional detail about the issue, **for example: `I'm seeing that the server seems to be overheating in temperature, and the LED lights are turning from green to red colour`**
+14. Provide additional detail about the issue, **for example: `I'm seeing logged error code 37 from my Veritas NetBackup management console`**
 15. Observe the agent response — you should see:
     * A system message confirming the agent **Used the tool "Troubleshooting Resolution Guide"** — this confirms **Tool 2 (File Upload)** was invoked
     * The agent attempts to match the symptoms against the L1/L2/L3 troubleshooting guide
-    * If no matching resolution steps are found, the agent informs the user and offers to raise an Incident (e.g., _"Unfortunately, I could not find any documented troubleshooting steps for the Veritas NetBackup server overheating and LED lights turning red."_)
-    * The agent presents **Yes** and **No** buttons asking whether to proceed with Incident creation
+    * If no matching resolution steps are found, the agent informs the user and offers to raise an Incident (e.g., _"Unfortunately, I could not find any documented troubleshooting steps for error code 37 in the Veritas NetBackup hardware connectivity guide."_)
+    * The agent presents **Yes** and **No** buttons asking whether to proceed with uploading any screenshots or supporting images of the error before raising an Incident case.
 
 ![Chat — Troubleshooting Guide used, no resolution found, Incident offer](/screenshots/L1-agent-testing-5.png)
 
@@ -380,13 +380,13 @@ After the category selection, the agent continues collecting the structured cont
 #### 7.6 — Upload the Image
 
 18. Click **"Click here to upload an image."** to open the file picker
-19. Select an error screenshot image (e.g., a Veritas NetBackup error screen capture showing an error code) and upload it
+19. Select an error screenshot image (e.g., a Veritas NetBackup error screen capture showing the '37' error code) and upload it. Upload both images that were provided as part of the lab resources provided by the lab.
 20. Observe the chat — you should see:
     * The uploaded image rendered as a thumbnail in the conversation
     * A confirmation message: _"The attachment is available in this link"_
     * The agent shows a **"Processing..."** indicator as it processes the uploaded image
 
-![Chat — Image uploaded, attachment confirmed, processing](/screenshots/L1-agent-testing-7.png)
+![Chat — Image uploaded, attachment confirmed, processing](/screenshots/L1-agent-testing-7a.png)
 
 > **What to verify:**
 
