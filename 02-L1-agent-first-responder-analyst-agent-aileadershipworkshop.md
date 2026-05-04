@@ -408,7 +408,7 @@ After the category selection, the agent continues collecting the structured cont
 21. Once processing completes, the agent presents a **summary of all information collected** during the conversation — including the uploaded screenshot — and asks for confirmation before raising the Incident. You should see a structured summary that includes:
     * **Issue type** — the category selected earlier (e.g., `Hardware`)
     * **Affected product / system** — identified from the conversation context (e.g., `Veritas NetBackup`)
-    * **Hostname / IP address** — retrieved from the conversation (e.g., `veritas-backup-01`)
+    * **Hostname / IP address** — retrieved from the conversation (e.g., `vnb-01-sn1`)
     * **Description of Issue** — the user's reported symptoms (e.g., `Logged error code 37 from Veritas NetBackup management console`)
     * **Date of occurrence** — date when the issue was reported (e.g., `04-08-2026`)
     * **Date of occurrence** — time when the issue was reported (e.g., `18:22`)
@@ -454,27 +454,70 @@ After the category selection, the agent continues collecting the structured cont
 ***
 
 #### 7.9 — Verify the Incident Record in the Platform
-
-25. Return back to your instance URL and **end the impersonation session** (return back to System Administrator user).
-26. Navigate to the **incident extend** table: type `x_snc_apacaienable_incident_extend.LIST` in the Filter navigator
-27. Locate the newly created Incident by the reference number from Step 24 (e.g., `INCE0012003`)
-28. Open the Incident record and verify the following fields:
-
-| Field             | Expected Value                                   |
-| ----------------- | ------------------------------------------------ |
-| Number            | `INCE0012003` (or the number returned in chat)   |
-| State             | `In Progress`                                    |
-| Channel           | `chat`                                           |
-| Category          | `Software` (or the category selected in Step 10) |
-| Short description | Contains the user-reported issue description     |
-| Caller            | `Alex Rai`                                       |
-| Attachments       | Uploaded image(s) present on the record          |
-
+ 
+##### 7.9a — End Impersonation
+ 
+25. Return to your instance URL. Click your **user avatar** in the top-right banner — the profile flyout confirms you are still impersonating **alex rai** (shown as _"Impersonating User"_).
+26. Click **End impersonation** to return to the System Administrator session.
+![Platform UI — alex rai profile flyout with End impersonation highlighted](/screenshots/L1-agent-testing-10.png)
+ 
+***
+ 
+##### 7.9b — Navigate to the Incident Extend Table
+ 
+27. In the **Filter navigator** (top-left), type **`incident extend`**.
+28. Under **All Results**, click **incident extends** to open the list view.
+![Filter navigator — searching for incident extend](/screenshots/L1-agent-testing-11.png)
+ 
+***
+ 
+##### 7.9c — Personalise the List Columns
+ 
+The default list view does not show the custom fields populated by the AI Agent. To surface them:
+ 
+29. Click the **Personalize List** icon (gear/globe icon in the list header bar) to open the **Personalize List Columns** dialog.
+![List header — Personalize List icon](/screenshots/L1-agent-testing-12.png)
+ 
+30. In the **Available** column on the left, locate and select the following custom fields (highlighted in blue at the bottom of the list): **error code**, **model details**, **product bar code**, **product name**, **serial number**.
+31. Click the **Add (>)** button to move them into the **Selected** column on the right.
+32. Click **OK** to apply.
+![Personalize List Columns dialog — custom fields selected for addition](/screenshots/L1-agent-testing-13.png)
+ 
+***
+ 
+##### 7.9d — Locate and Verify the Incident Record
+ 
+33. The list view now displays the extended columns. Locate the newly created Incident by the reference number returned in Step 24 — it should appear as the most recent record (e.g., `INCE0013001`).
+![Incident extend list view — full record list with custom columns visible](/screenshots/L1-agent-testing-14.png)
+ 
+34. Verify the following fields on the record:
+| Field             | Expected Value                                                                                      |
+| ----------------- | --------------------------------------------------------------------------------------------------- |
+| Number            | `INCE0013001` (or the number returned in chat)                                                      |
+| Caller            | `alex rai`                                                                                          |
+| Short description | Contains the user-reported issue description (e.g., _"Hardware issue with Veritas NetBackup server vnb-01-sn1, error code 37"_) |
+| State             | `In Progress`                                                                                       |
+| Category          | `Hardware` (or the category selected in Step 10)                                                    |
+| error code        | `37` (populated from the conversation context)                                                      |
+| product name      | `NETBACKUP APPLIANCE 5240 4TB` (or the matched product)                                            |
+| serial number     | `VTAS0013083` (or the matched serial)                                                               |
+| product bar code  | `SYS-VES-NBU5240-222` (or the matched bar code)                                                    |
+| model details     | `VER5000W` (or the matched model)                                                                   |
+| Updated by        | `system`                                                                                            |
+ 
+> **Key observations:**
+>
+> * The **Caller** field is set to `alex rai` — confirming the Knowledge Graph correctly resolved the impersonated user's identity and passed it through to the subflow.
+> * The **custom extended fields** (error code, product name, serial number, product bar code, model details) are populated — confirming the AI Agent accumulated structured context across the conversation and passed it as subflow inputs.
+> * The **State** is `In Progress` — distinguishing this live record from the earlier seed data records (which show as `Closed`).
+ 
 > **If the Incident was not created:** Check the following:
 >
 > * Subflow **Run As** is set to **System User** (Pre-Requisite Step 2)
 > * All four mandatory subflow inputs are being passed correctly by the agent
 > * The `x_nava_agentic_lab` application scope is active
+>
+> **If custom fields are empty:** Verify that the Incident creation subflow maps the AI Agent's conversation outputs to the corresponding fields on the `x_snc_apacaienable_incident_extend` table.
 
 ***
 
