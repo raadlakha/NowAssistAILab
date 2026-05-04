@@ -307,4 +307,4 @@ From Zurich Patch 2, the following default behaviours change:
 
 ## Next Step
 
-Continue to [01 — First Responder Operations Analyst Agent](01-L1-agent-first-responder-analyst-agent-aileadershipworkshop.md) to configure the Requestor AI Agent: First Responder Operations Analyst Agent.
+Continue to [01b — Now Assist Document Intelligence](01b-now-assist-document-intelligence-aileadershipworkshop.md) to configure Now Assist in Document Intelligence.

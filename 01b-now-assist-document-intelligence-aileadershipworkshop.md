@@ -16,7 +16,7 @@ In this lab, NADI is configured with a use case called **Veritas Extract**. When
 
 ## Role in the Requestor Flow
 
-![NADI Flow Overview](../screenshots/flow-NADI.png)
+![NADI Flow Overview](/screenshots/flow-NADI.png)
 
 ***
 
@@ -38,7 +38,7 @@ In this lab, NADI is configured with a use case called **Veritas Extract**. When
 
 Navigate to **All** → search **Now Assist Admin** → **Skills** → **Platform** → **Search for 'Document'** → **Edit 'Extract information from documents'**
 
-![NADI — Now Assist Features screen](<../.gitbook/assets/NADI-1 (1).png>)
+![NADI — Now Assist Features screen](</screenshots/NADI-1.png>)
 
 > This is the entry point for all NADI configuration. The skill is OOB — you do not create it. You create **use cases** within it.
 
@@ -49,7 +49,7 @@ Navigate to **All** → search **Now Assist Admin** → **Skills** → **Platfor
 1. Click **Edit** on the **Extract Information from documents** skill
 2. Click **New use case**
 
-![NADI — Create Use Case](<../.gitbook/assets/NADI-2 (1).png>)
+![NADI — Create Use Case](</screenshots/NADI-2.png>)
 
 | Field             | Value                                                        |
 | ----------------- | ------------------------------------------------------------ |
@@ -60,7 +60,7 @@ Navigate to **All** → search **Now Assist Admin** → **Skills** → **Platfor
 
 3. Click **Next**
 
-![NADI — Use Case Details](<../.gitbook/assets/NADI-3 (1).png>)
+![NADI — Use Case Details](</screenshots/NADI-3.png>)
 
 ***
 
@@ -68,11 +68,11 @@ Navigate to **All** → search **Now Assist Admin** → **Skills** → **Platfor
 
 On the **Fields** step, click **Add a field** — select **Field** (not question or table).
 
-![NADI — Add Fields](<../.gitbook/assets/NADI-4 (1).png>)
+![NADI — Add Fields](</screenshots/NADI-4.png>)
 
 #### Field 1 — Error Code
 
-![NADI — Error Code Field](<../.gitbook/assets/NADI-5-error-code-field (1).png>)
+![NADI — Error Code Field](</screenshots/NADI-5-error-code-field.png>)
 
 | Setting                     | Value        |
 | --------------------------- | ------------ |
@@ -91,7 +91,7 @@ This is the error code mentioned in the image, example of error code text is "0x
 
 #### Field 2 — Model Details
 
-![NADI — Model Details Field](<../.gitbook/assets/NADI-5-model-details-field (1).png>)
+![NADI — Model Details Field](</screenshots/NADI-5-model-details-field.png>)
 
 | Setting                     | Value           |
 | --------------------------- | --------------- |
@@ -108,7 +108,7 @@ This is Reg. Model Version, Alpha numeric field on the image
 
 #### Field 3 — Product Name
 
-![NADI — Product Name Field](<../.gitbook/assets/NADI-5-product-name-field (1).png>)
+![NADI — Product Name Field](</screenshots/NADI-5-product-name-field.png>)
 
 | Setting                     | Value          |
 | --------------------------- | -------------- |
@@ -125,7 +125,7 @@ This is the product name which is mentioned on the device details image, general
 
 #### Field 4 — Serial Number
 
-![NADI — Serial Number Field](<../.gitbook/assets/NADI-5-serial-number-field (1).png>)
+![NADI — Serial Number Field](</screenshots/NADI-5-serial-number-field.png>)
 
 | Setting                     | Value           |
 | --------------------------- | --------------- |
@@ -142,7 +142,7 @@ This is the SN number mentioned at the end of the image on the left side, mentio
 
 #### Field 5 — PN Bar Code
 
-![NADI — PN Bar Code Field](<../.gitbook/assets/NADI-5-pn-bar-code-field (1).png>)
+![NADI — PN Bar Code Field](</screenshots/NADI-5-pn-bar-code-field.png>)
 
 | Setting                     | Value              |
 | --------------------------- | ------------------ |
@@ -167,7 +167,7 @@ This step validates that NADI can correctly read your lab images and extract the
 
 In the **Test output** step, an upload dialog appears.
 
-![NADI — Test upload dialog](../.gitbook/assets/NADI-testing1.png)
+![NADI — Test upload dialog](/screenshots/NADI-testing1.png)
 
 Select **Upload from this device** and click **+ Add file**.
 
@@ -184,7 +184,7 @@ Click **Continue**.
 
 NADI processes both images and opens the **Document Q\&A** panel.
 
-![NADI — Extracted fields pending review](../.gitbook/assets/NADI-testing-mark-review1.png)
+![NADI — Extracted fields pending review](/screenshots/NADI-testing-mark-review1.png)
 
 The panel shows:
 
@@ -199,13 +199,13 @@ Example extracted values: `error code` = `37`, `model detais` = `VER5000W`
 
 For each field, click **Mark As Reviewed** to confirm the extracted value is correct.
 
-![NADI — Mark As Reviewed button](../.gitbook/assets/NADI-testing-mark-review2.png)
+![NADI — Mark As Reviewed button](/screenshots/NADI-testing-mark-review2.png)
 
 > Mark all 5 extracted fields as reviewed. Each field card turns green and the **To review** count decrements.
 
 #### Step 4d — Verify All Fields are Green
 
-![NADI — All fields reviewed and green](../.gitbook/assets/NADI-testing-mark-review-validate.png)
+![NADI — All fields reviewed and green](/screenshots/NADI-testing-mark-review-validate.png)
 
 * **All fields should be green** — each field card shows a green checkmark
 * **To review count should become 0** — confirmed you have reviewed all fields
@@ -216,7 +216,7 @@ For each field, click **Mark As Reviewed** to confirm the extracted value is cor
 
 Click **Submit** (top right). The **Confirm field predictions** dialog appears.
 
-![NADI — Confirm and submit dialog](../.gitbook/assets/NADI-confirm-submit-field.png)
+![NADI — Confirm and submit dialog](/screenshots/NADI-confirm-submit-field.png)
 
 The dialog reads: _"Confirm that you've reviewed all fields for accuracy before you submit."_
 
@@ -231,7 +231,7 @@ Click **Confirm and submit**.
 1. Navigate to the **Integrations** step in the use case
 2. Click **Add Integration**
 
-![NADI — Integration config 1](<../.gitbook/assets/NADI-8-integration (1).png>)
+![NADI — Integration config 1](</screenshots/NADI-8-integration.png>)
 
 | Field                | Value             |
 | -------------------- | ----------------- |
@@ -242,7 +242,7 @@ Click **Confirm and submit**.
 
 **Condition** — configure when the flow should fire:
 
-![NADI — Process integration condition](../.gitbook/assets/NADI-process-integrate-condition.png)
+![NADI — Process integration condition](/screenshots/NADI-process-integrate-condition.png)
 
 | Field    | Operator       |
 | -------- | -------------- |
@@ -252,7 +252,7 @@ Click **Confirm and submit**.
 
 3. Ensure **Create Flow** is checked, then click **Save**
 
-![NADI — Integration config 2](<../.gitbook/assets/NADI-8-integration2 (1).png>)
+![NADI — Integration config 2](</screenshots/NADI-8-integration2.png>)
 
 This auto-generates:
 
@@ -267,7 +267,7 @@ Trigger: Document Task Updated WHERE status = Done
 
 1. Locate **Veritas\_Process** in the Integrations panel
 
-![NADI — Activate integration](<../.gitbook/assets/NADI-8-activate3 (1).png>)
+![NADI — Activate integration](</screenshots/NADI-8-activate3.png>)
 
 2. Click **Open in Flow Designer**
 3. Click **Activate** — status updates to **Active**
@@ -279,7 +279,7 @@ Trigger: Document Task Updated WHERE status = Done
 1. Navigate to **Integrations** tab of the use case
 2. Add a second integration:
 
-![NADI — Integration trigger config 1](<../.gitbook/assets/NADI-9-integration (1).png>)
+![NADI — Integration trigger config 1](</screenshots/NADI-9-integration.png>)
 
 | Field                | Value             |
 | -------------------- | ----------------- |
@@ -288,13 +288,13 @@ Trigger: Document Task Updated WHERE status = Done
 | **Integration type** | `Extract Values`  |
 | **Create Flow**      | Checked           |
 
-![NADI — Integration trigger config 2](<../.gitbook/assets/NADI-9-integration2 (1).png>)
+![NADI — Integration trigger config 2](</screenshots/NADI-9-integration2.png>)
 
 3. Verify the trigger activates correctly
 
-![NADI — Activate trigger step 1](<../.gitbook/assets/NADI-9-integration-activate3 (1).png>)
+![NADI — Activate trigger step 1](</screenshots/NADI-9-integration-activate3.png>)
 
-![NADI — Activate trigger step 2](<../.gitbook/assets/NADI-9-integration-activate4 (1).png>)
+![NADI — Activate trigger step 2](</screenshots/NADI-9-integration-activate4.png>)
 
 ***
 
@@ -302,7 +302,7 @@ Trigger: Document Task Updated WHERE status = Done
 
 Review the full configuration on the **Review and activate** screen (Step 5 of the wizard).
 
-![NADI — Review and activate summary](../.gitbook/assets/NADI-setup-step5.png)
+![NADI — Review and activate summary](/screenshots/NADI-setup-step5.png)
 
 **Verify use case details:**
 
@@ -330,7 +330,7 @@ Review the full configuration on the **Review and activate** screen (Step 5 of t
 
 Click **Complete setup**.
 
-![NADI — Use case set successfully](../.gitbook/assets/NADI-step5-complete.png)
+![NADI — Use case set successfully](/screenshots/NADI-step5-complete.png)
 
 > **"Your use case has been set"** — Click **Return to use cases**.
 
@@ -342,9 +342,9 @@ Click **Complete setup**.
 2. Navigate to **Extraction mode**
 3. Toggle **Full automation mode (no agent review required)** to **On**
 
-![NADI — Full automation verification](<../.gitbook/assets/NADI-10-usecase-full-auto (1).png>)
+![NADI — Full automation verification](</screenshots/NADI-10-usecase-full-auto.png>)
 
-![NADI — Full automation result](<../.gitbook/assets/NADI-10-usecase-full-auto2 (1).png>)
+![NADI — Full automation result](</screenshots/NADI-10-usecase-full-auto2.png>)
 
 > Full automation mode means GenAI extracts and writes fields immediately — no agent review required. This is required for the Requestor Flow so the Agentic Workflow trigger can fire within the same session.
 
