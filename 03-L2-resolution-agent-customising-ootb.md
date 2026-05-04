@@ -243,16 +243,27 @@ After enabling the Now Assist panel, refresh the Testing tab again and it will d
 ![Testing tab — Now Assist Panel is not configured banner](/screenshots/customise-ootb-ai-agent-15.png)
  
 1. Click **Set up**
-2. Open the **Now Assist Panel - Platform (default)** assistant — it will show as **Inactive**
+2. Open the **Now Assist Panel - Platform (default)** assistant — it will show as **Inactive**, with a banner: _"Your assistant is inactive. Select at least one display experience to activate this assistant."_
 
 ![Assistant Designer — Now Assist Panel - Platform (default) Inactive](/screenshots/customise-ootb-ai-agent-16.png)
- 
-3. Click **Activate** in the top-right corner
-4. Confirm the activation — a banner confirms _"Now Assist Panel - Platform (default) was activated"_
+
+> **Why can't you activate yet?** The assistant requires at least one display experience before activation is allowed. The **Activate** button in the top-right remains greyed out until this is configured.
+
+3. Click the **Settings** tab, then select **Display experiences** from the left-hand menu
+4. Click the **Add ServiceNow platform ▼** dropdown and select **Unified Navigation app shell**
+
+![Settings — Display experiences — Add ServiceNow platform dropdown with Unified Navigation app shell](/screenshots/customise-ootb-ai-agent-21.png)
+
+5. The platform is added to the table — confirm it shows **Unified Navigation app shell** with **Enhanced** experience
+
+![Settings — Display experiences — Unified Navigation app shell added](/screenshots/customise-ootb-ai-agent-22.png)
+
+6. Click **Activate** in the top-right corner (now enabled)
+7. Confirm the activation — a banner confirms _"Now Assist Panel - Platform (default) was activated"_
 
 ![Assistant Designer — Now Assist Panel - Platform (default) Activated](/screenshots/customise-ootb-ai-agent-17.png)
 
-5. Return back to the Testing tab in AI Agent Studio to test your AI Agent.
+8. Return back to the Testing tab in AI Agent Studio to test your AI Agent.
  
 ***
  
