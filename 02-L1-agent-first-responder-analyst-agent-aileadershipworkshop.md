@@ -1,4 +1,4 @@
-# 03 — L1 First Responder Operations Analyst Agent
+# 02 — L1 First Responder Operations Analyst Agent
 
 > **Release:** Zurich | **Flow:** Requestor Flow — Phase 1 (Step 3)
 
@@ -528,4 +528,4 @@ All subflow inputs are mandatory — the agent accumulates them across the conve
 
 ## Next Steps
 
-→ [04 — Customising an Out Of The Box Platform AI Agent as the Incident Resolution AI Agent](04-L2-resolution-agent-customising-ootb.md)
+→ [03 — Customising an Out Of The Box Platform AI Agent as the Incident Resolution AI Agent](03-L2-resolution-agent-customising-ootb.md)

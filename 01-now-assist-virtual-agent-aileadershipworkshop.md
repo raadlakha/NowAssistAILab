@@ -1,4 +1,4 @@
-# 01 — Now Assist for Virtual Agent (NAVA)
+# 01a — Now Assist for Virtual Agent (NAVA)
 
 > **Release:** Zurich | **Flow:** Requestor Flow — Phase 1 (Step 1 & 2) **Source:** [ServiceNow Zurich — Using Now Assist in Virtual Agent](https://www.servicenow.com/docs/bundle/zurich-conversational-interfaces/page/administer/now-assist-in-va/concept/using-now-assist-in-va.html) | [Configuring Now Assist in Virtual Agent](https://www.servicenow.com/docs/bundle/zurich-conversational-interfaces/page/administer/now-assist-in-va/task/configure-now-assist-va.html)
 
@@ -307,4 +307,4 @@ From Zurich Patch 2, the following default behaviours change:
 
 ## Next Step
 
-Continue to [02 — First Responder Operations Analyst Agent](02-L1-agent-first-responder-analyst-agent-aileadershipworkshop.md) to configure the Requestor AI Agent: First Responder Operations Analyst Agent.
+Continue to [01 — First Responder Operations Analyst Agent](01-L1-agent-first-responder-analyst-agent-aileadershipworkshop.md) to configure the Requestor AI Agent: First Responder Operations Analyst Agent.

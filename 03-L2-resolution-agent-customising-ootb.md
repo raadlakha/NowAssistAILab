@@ -1,4 +1,4 @@
-# 04 — Customising an Out-of-the-Box Platform AI Agent as the Incident Investigation and Resolution AI Agent
+# 03 — Customising an Out-of-the-Box Platform AI Agent as the Incident Investigation and Resolution AI Agent
  
 > **Release:** Zurich | **Flow:** Fulfiller Flow — Phase 2 (Step 1)
  
