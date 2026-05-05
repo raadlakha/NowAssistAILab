@@ -362,7 +362,7 @@ After the category selection, the agent continues collecting the structured cont
 
 #### 7.5 — Trigger Image Upload
 
-16. Click **Yes** to confirm you want to raise an Incident
+16. Click **Yes** to confirm you want to upload any screenshots or supporting images of the error or hardware details before raising an Incident ticket.
 17. The agent invokes **Tool 3 (Conversational Topic — Upload Image)** and the chat displays:
     * _"Please upload an image"_
     * A **"Click here to upload an image."** link/button rendered by the Virtual Agent topic
