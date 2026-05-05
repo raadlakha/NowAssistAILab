@@ -326,9 +326,12 @@ After the category selection, the agent continues collecting the structured cont
 ![Chat — Hardware selected, product identified as Veritas NetBackup, hostname provided](/screenshots/testing-agent1-pn-hn.png)
 
 12. The agent then asks when the issue first occurred — select the date and time using the calendar picker.
+
+![Chat — Date and time picker](/screenshots/L1-agent-testing-15.png)
+
 13. The agent asks whether this is affecting a single device or multiple devices. Reply either **`Single device`** or **`Multiple device`**.
 
-![Chat — Date and time selected, device scope confirmed as single device](/screenshots/testing-agent1-datetime-devicetype.png)
+![Device scope confirmed as single device](/screenshots/testing-agent1-datetime-devicetype.png)
 
 > **Note:** The exact questions the agent asks and their order may vary depending on how you have authored the agent's description, role, and list of steps. The agent uses its LLM reasoning to determine which context fields it still needs before proceeding — these screenshots reflect one representative flow.
 
